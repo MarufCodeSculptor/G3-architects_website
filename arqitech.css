@@ -13,18 +13,21 @@
   outline: none;
   border: none;
 }
-.text-light-gray{
-    color: #727272;
+.text-light-gray {
+  text-transform: capitalize;
+  color: #727272;
+  margin: 10px;
 }
- .section-tittle {
-    color: #131313;
-    font-size: 2.81rem;
-    font-weight: 700;
-   
-    
-   
-    
-  }
+.section-tittle {
+  color: #131313;
+  font-size: 2.81rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+.text-center{
+    text-align: center;
+}
 
 * {
   margin: 0;
@@ -112,7 +115,6 @@ main {
 }
 
 .team-content {
-  
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -126,45 +128,68 @@ main {
   text-transform: uppercase;
 }
 .team-tittle .of-our {
-  color:#131313;
-  font-size:2.8rem; 
+  color: #131313;
+  font-size: 2.8rem;
   font-weight: 700;
 }
-.team-tittle .feature{
-    color: #FF900E;
-    font-size: 2.8rem;
-    font-weight: 700;
+.team-tittle .feature {
+  color: #ff900e;
+  font-size: 2.8rem;
+  font-weight: 700;
 }
-.team-description{
-    margin: 24px 0px 32px 0px;
-    line-height: 26px;
-    color: #727272;
-    font-size: 1rem;
+.team-description {
+  margin: 24px 0px 32px 0px;
+  line-height: 26px;
+  color: #727272;
+  font-size: 1rem;
 }
 /* --------------------tesm section ended here /----------------- */
-  
 
+/* facts section style start here */
+.facts-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+.fact-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+}
+.fact-card img {
+  width: 45px;
+  height: 45px;
+}
+.fact-card h1 {
+  font-size: 2.81rem;
+  text-transform: capitalize;
+}
+.fact-card p {
+  color: #727272;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.sponsores-logos-container{
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:2rem;
+    margin: 4rem 0rem;
+}
+.sponsores-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sponsores-image-container img{
+    width: 100%;
+}
 
 
 
@@ -178,43 +203,59 @@ main {
 /* responsive styles */
 /* smaller device  */
 @media screen and (max-width: 576px) {
-    /* header responsive */
+  /* header responsive */
   header {
     padding: 20px;
   }
   nav {
     flex-direction: column;
   }
-  .banner-tittle{
+  .banner-tittle {
     font-size: 2rem;
   }
   /* ended */
   /* team section responsive */
   .teams-container {
-      grid-template-columns: repeat(1, 1fr);
-      gap:2rem;
-    }
-    .image-grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap:1rem;
-        align-items: center;
-        justify-content: center;
-        
-      }
-      .image-grid img{
-        width: 100%;
-        padding:10px;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-      }
-      .team-content {
-        padding: 0px 1.2rem;
-    }
-    /* ended //////////////j-------------- */
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-grid img {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  .team-content {
+    padding: 0px 1.2rem;
+  }
+  /* ended //////////////j-------------- */
+  /* facts responsive */
+  .facts-card-container{
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+  }
+  .fact-card{
+    margin: 0px 10px;
+  }
+  .sponsores-logos-container{
+    
+    grid-template-columns:repeat(2,1fr);
+    gap:2rem;
+    margin: 4rem 0rem;
+}
+#figma{
+    grid-row: span 1;
+}
+.sponsores-image-container img{
+    width: 60%;
+}
 
 
-  
-    
-    
 
 }
 
@@ -226,5 +267,15 @@ main {
 
   .header {
     padding: 20px;
+  }
+  .teams-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap:3rem;
+    }
+  
+   
+  .facts-card-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
   }
 }
