@@ -13,6 +13,18 @@
   outline: none;
   border: none;
 }
+.text-light-gray{
+    color: #727272;
+}
+ .section-tittle {
+    color: #131313;
+    font-size: 2.81rem;
+    font-weight: 700;
+   
+    
+   
+    
+  }
 
 * {
   margin: 0;
@@ -33,15 +45,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-nav h3 {
-  color: #131313;
-  text-align: center;
-  font-family: "Work Sans";
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
+
 nav ul {
   display: flex;
 }
@@ -85,10 +89,12 @@ nav li a {
 /* banner style end here */
 
 /* main section style start here */
+
 main {
   max-width: 1440px;
   margin: 70px auto;
 }
+/* -----------------------team secion style start here --------------------- */
 .teams-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -135,13 +141,44 @@ main {
     color: #727272;
     font-size: 1rem;
 }
-
+/* --------------------tesm section ended here /----------------- */
   
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive styles */
 /* smaller device  */
 @media screen and (max-width: 576px) {
+    /* header responsive */
   header {
     padding: 20px;
   }
@@ -151,6 +188,8 @@ main {
   .banner-tittle{
     font-size: 2rem;
   }
+  /* ended */
+  /* team section responsive */
   .teams-container {
       grid-template-columns: repeat(1, 1fr);
       gap:2rem;
@@ -169,9 +208,12 @@ main {
       }
       .team-content {
         padding: 0px 1.2rem;
+    }
+    /* ended //////////////j-------------- */
+
+
   
     
-      }
     
 
 }
