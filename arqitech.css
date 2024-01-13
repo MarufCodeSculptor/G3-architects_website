@@ -87,7 +87,7 @@ nav li a {
 /* main section style start here */
 main {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 70px auto;
 }
 .teams-container {
   display: grid;
@@ -106,7 +106,7 @@ main {
 }
 
 .team-content {
-  flex: 1;
+  
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -148,6 +148,32 @@ main {
   nav {
     flex-direction: column;
   }
+  .banner-tittle{
+    font-size: 2rem;
+  }
+  .teams-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap:2rem;
+    }
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap:1rem;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .image-grid img{
+        width: 100%;
+        padding:10px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      }
+      .team-content {
+        padding: 0px 1.2rem;
+  
+    
+      }
+    
+
 }
 
 /*  medium devices  */
